@@ -11,6 +11,9 @@ class SecureChannel(Shareable):
     def resetSecurity(self):
         pass
 
+    def getSecurityLevel(self):
+        return self.NO_SECURITY_LEVEL
+
 class GPSystem(object):
     APPLICATION_INSTALLED = 0x03
     APPLICATION_SELECTABLE = 0x07
